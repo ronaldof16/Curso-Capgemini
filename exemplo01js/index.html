@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo JavaScript</title>
+    <script>
+        let primeira = document.getElementByTagName("h1");
+        
+        let terceira = document.getElementByTagName("h3");
+
+        function mensagem() {
+            alert("Olá mundo!");
+        }
+
+        function estilo() {
+            let segunda = document.getElementsByTagName("h2")[0];
+            segunda.style.color = "red";
+            segunda.style.background = "blue";
+        }
+    </script>
+</head>
+<body>
+    <h1 onclick="mensagem()">Bom dia</h1>
+    <h2 onclick="estilo()">Boa tarde</h2>
+    <h3 onclick="mensagem()">Boa noite</h3>
+</body>
+</html>
